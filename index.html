@@ -10,8 +10,9 @@
   <body>
     <div class="list">
       <h1 class="title">Lista de tarefas</h1>
-      <input type="text" id="text" placeholder="Digite a tarefa" required />
-      <input type="submit" value="ADICIONAR" id="send" required/>
+      <input type="text" id="text" placeholder="Digite a tarefa" pattern="[^0-9]+" />
+      <input type="submit" value="ADICIONAR" id="send"/>
+      <input type="submit" value="EXCLUIR TUDO" id = "all">
       <ul class="criadorLista"></ul>
     </div>
 

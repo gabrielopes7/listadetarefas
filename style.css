@@ -35,20 +35,36 @@ input#text {
 }
 
 input#send {
-  display: block;
+  display: inline-block;
   margin: auto;
   margin-top: 10px;
   padding: 15px;
   width: 150px;
-  background-color: rgb(243, 66, 66);
+  background-color: rgb(0, 150, 20);
+  color: white;
+  font-size: 14px;
+  border: none;
+}
+input#all {
+  display: inline-block;
+  margin: auto;
+  margin-top: 10px;
+  padding: 15px;
+  width: 150px;
+  background-color: rgb(0, 0, 0);
   color: white;
   font-size: 14px;
   border: none;
 }
 
 input#send:hover{
-    background-color: rgb(184, 49, 49);
+    background-color: rgb(0, 185, 25);
     cursor: pointer;
+}
+
+input#all:hover{
+  background-color: rgb(243, 66, 66);
+  cursor: pointer;
 }
 
 ul {
@@ -60,4 +76,9 @@ ul {
 
 li{
     margin-top: 20px ;
+}
+
+a{
+  text-decoration: none;
+  float: right;
 }
