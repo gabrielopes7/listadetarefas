@@ -15,6 +15,7 @@ function criarLista() {
 
   for (elemento of armazenamento) {
     let lista = document.createElement("li");
+    let linha = document.createElement("hr")
     let texto = document.createTextNode(elemento);
 
     let linkExcluir = document.createElement("a");
@@ -27,6 +28,7 @@ function criarLista() {
     lista.appendChild(texto);
     lista.appendChild(linkExcluir);
     criaLista.appendChild(lista);
+    criaLista.appendChild(linha);
   }
 }
 
